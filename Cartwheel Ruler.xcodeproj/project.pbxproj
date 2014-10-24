@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E103EFAB19E98E7E005E0EBE /* Ruler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103EFAA19E98E7E005E0EBE /* Ruler.swift */; };
+		E11180BB19FABF4E00FDDBE7 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11180BA19FABF4E00FDDBE7 /* InstructionViewController.swift */; };
+		E11180C119FAE0EE00FDDBE7 /* SlideShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11180C019FAE0EE00FDDBE7 /* SlideShowModel.swift */; };
+		E1612E5119F9B249008B0C62 /* pic.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E1612E5019F9B249008B0C62 /* pic.JPG */; };
+		E1612E5319F9B58A008B0C62 /* pic.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E1612E5219F9B58A008B0C62 /* pic.PNG */; };
+		E16B2E4A19EA244400D8DDF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16B2E4919EA244400D8DDF2 /* AudioToolbox.framework */; };
+		E1C987D419FA01960042C082 /* tesla.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E1C987D319FA01960042C082 /* tesla.JPG */; };
+		E1D87C1819E07071002F98A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87C1719E07071002F98A2 /* AppDelegate.swift */; };
+		E1D87C1A19E07071002F98A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87C1919E07071002F98A2 /* ViewController.swift */; };
+		E1D87C1D19E07071002F98A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D87C1B19E07071002F98A2 /* Main.storyboard */; };
+		E1D87C1F19E07071002F98A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D87C1E19E07071002F98A2 /* Images.xcassets */; };
+		E1D87C2219E07071002F98A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D87C2019E07071002F98A2 /* LaunchScreen.xib */; };
+		E1D87C2E19E07071002F98A2 /* Cartwheel_RulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87C2D19E07071002F98A2 /* Cartwheel_RulerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1D87C2819E07071002F98A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D87C0A19E07071002F98A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D87C1119E07071002F98A2;
+			remoteInfo = "Cartwheel Ruler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E103EFAA19E98E7E005E0EBE /* Ruler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruler.swift; sourceTree = "<group>"; };
+		E11180BA19FABF4E00FDDBE7 /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		E11180C019FAE0EE00FDDBE7 /* SlideShowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowModel.swift; sourceTree = "<group>"; };
+		E1612E5019F9B249008B0C62 /* pic.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.JPG; sourceTree = "<group>"; };
+		E1612E5219F9B58A008B0C62 /* pic.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.PNG; sourceTree = "<group>"; };
+		E16B2E4919EA244400D8DDF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E1C987D319FA01960042C082 /* tesla.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.JPG; sourceTree = "<group>"; };
+		E1D87C1219E07071002F98A2 /* Cartwheel Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cartwheel Ruler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D87C1619E07071002F98A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D87C1719E07071002F98A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1D87C1919E07071002F98A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1D87C1C19E07071002F98A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1D87C1E19E07071002F98A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1D87C2119E07071002F98A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E1D87C2719E07071002F98A2 /* Cartwheel RulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cartwheel RulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D87C2C19E07071002F98A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D87C2D19E07071002F98A2 /* Cartwheel_RulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartwheel_RulerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1D87C0F19E07071002F98A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16B2E4A19EA244400D8DDF2 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D87C2419E07071002F98A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E11180C219FAE12C00FDDBE7 /* Instruction Slides */ = {
+			isa = PBXGroup;
+			children = (
+				E1612E5019F9B249008B0C62 /* pic.JPG */,
+				E1C987D319FA01960042C082 /* tesla.JPG */,
+				E1612E5219F9B58A008B0C62 /* pic.PNG */,
+			);
+			name = "Instruction Slides";
+			sourceTree = "<group>";
+		};
+		E1D87C0919E07071002F98A2 = {
+			isa = PBXGroup;
+			children = (
+				E16B2E4919EA244400D8DDF2 /* AudioToolbox.framework */,
+				E1D87C1419E07071002F98A2 /* Cartwheel Ruler */,
+				E1D87C2A19E07071002F98A2 /* Cartwheel RulerTests */,
+				E1D87C1319E07071002F98A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1D87C1319E07071002F98A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D87C1219E07071002F98A2 /* Cartwheel Ruler.app */,
+				E1D87C2719E07071002F98A2 /* Cartwheel RulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D87C1419E07071002F98A2 /* Cartwheel Ruler */ = {
+			isa = PBXGroup;
+			children = (
+				E1D87C1719E07071002F98A2 /* AppDelegate.swift */,
+				E11180C019FAE0EE00FDDBE7 /* SlideShowModel.swift */,
+				E11180BA19FABF4E00FDDBE7 /* InstructionViewController.swift */,
+				E11180C219FAE12C00FDDBE7 /* Instruction Slides */,
+				E1D87C1919E07071002F98A2 /* ViewController.swift */,
+				E103EFAA19E98E7E005E0EBE /* Ruler.swift */,
+				E1D87C1B19E07071002F98A2 /* Main.storyboard */,
+				E1D87C1E19E07071002F98A2 /* Images.xcassets */,
+				E1D87C2019E07071002F98A2 /* LaunchScreen.xib */,
+				E1D87C1519E07071002F98A2 /* Supporting Files */,
+			);
+			path = "Cartwheel Ruler";
+			sourceTree = "<group>";
+		};
+		E1D87C1519E07071002F98A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1D87C1619E07071002F98A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1D87C2A19E07071002F98A2 /* Cartwheel RulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D87C2D19E07071002F98A2 /* Cartwheel_RulerTests.swift */,
+				E1D87C2B19E07071002F98A2 /* Supporting Files */,
+			);
+			path = "Cartwheel RulerTests";
+			sourceTree = "<group>";
+		};
+		E1D87C2B19E07071002F98A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1D87C2C19E07071002F98A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1D87C1119E07071002F98A2 /* Cartwheel Ruler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D87C3119E07071002F98A2 /* Build configuration list for PBXNativeTarget "Cartwheel Ruler" */;
+			buildPhases = (
+				E1D87C0E19E07071002F98A2 /* Sources */,
+				E1D87C0F19E07071002F98A2 /* Frameworks */,
+				E1D87C1019E07071002F98A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cartwheel Ruler";
+			productName = "Cartwheel Ruler";
+			productReference = E1D87C1219E07071002F98A2 /* Cartwheel Ruler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1D87C2619E07071002F98A2 /* Cartwheel RulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D87C3419E07071002F98A2 /* Build configuration list for PBXNativeTarget "Cartwheel RulerTests" */;
+			buildPhases = (
+				E1D87C2319E07071002F98A2 /* Sources */,
+				E1D87C2419E07071002F98A2 /* Frameworks */,
+				E1D87C2519E07071002F98A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D87C2919E07071002F98A2 /* PBXTargetDependency */,
+			);
+			name = "Cartwheel RulerTests";
+			productName = "Cartwheel RulerTests";
+			productReference = E1D87C2719E07071002F98A2 /* Cartwheel RulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1D87C0A19E07071002F98A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alex Reidy";
+				TargetAttributes = {
+					E1D87C1119E07071002F98A2 = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					E1D87C2619E07071002F98A2 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E1D87C1119E07071002F98A2;
+					};
+				};
+			};
+			buildConfigurationList = E1D87C0D19E07071002F98A2 /* Build configuration list for PBXProject "Cartwheel Ruler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1D87C0919E07071002F98A2;
+			productRefGroup = E1D87C1319E07071002F98A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1D87C1119E07071002F98A2 /* Cartwheel Ruler */,
+				E1D87C2619E07071002F98A2 /* Cartwheel RulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D87C1019E07071002F98A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C987D419FA01960042C082 /* tesla.JPG in Resources */,
+				E1D87C1D19E07071002F98A2 /* Main.storyboard in Resources */,
+				E1D87C2219E07071002F98A2 /* LaunchScreen.xib in Resources */,
+				E1D87C1F19E07071002F98A2 /* Images.xcassets in Resources */,
+				E1612E5319F9B58A008B0C62 /* pic.PNG in Resources */,
+				E1612E5119F9B249008B0C62 /* pic.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D87C2519E07071002F98A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D87C0E19E07071002F98A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D87C1A19E07071002F98A2 /* ViewController.swift in Sources */,
+				E1D87C1819E07071002F98A2 /* AppDelegate.swift in Sources */,
+				E103EFAB19E98E7E005E0EBE /* Ruler.swift in Sources */,
+				E11180C119FAE0EE00FDDBE7 /* SlideShowModel.swift in Sources */,
+				E11180BB19FABF4E00FDDBE7 /* InstructionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D87C2319E07071002F98A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D87C2E19E07071002F98A2 /* Cartwheel_RulerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1D87C2919E07071002F98A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D87C1119E07071002F98A2 /* Cartwheel Ruler */;
+			targetProxy = E1D87C2819E07071002F98A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1D87C1B19E07071002F98A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D87C1C19E07071002F98A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1D87C2019E07071002F98A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D87C2119E07071002F98A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1D87C2F19E07071002F98A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1D87C3019E07071002F98A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1D87C3219E07071002F98A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cartwheel Ruler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1D87C3319E07071002F98A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cartwheel Ruler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E1D87C3519E07071002F98A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Cartwheel RulerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cartwheel Ruler.app/Cartwheel Ruler";
+			};
+			name = Debug;
+		};
+		E1D87C3619E07071002F98A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Cartwheel RulerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cartwheel Ruler.app/Cartwheel Ruler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1D87C0D19E07071002F98A2 /* Build configuration list for PBXProject "Cartwheel Ruler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D87C2F19E07071002F98A2 /* Debug */,
+				E1D87C3019E07071002F98A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D87C3119E07071002F98A2 /* Build configuration list for PBXNativeTarget "Cartwheel Ruler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D87C3219E07071002F98A2 /* Debug */,
+				E1D87C3319E07071002F98A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D87C3419E07071002F98A2 /* Build configuration list for PBXNativeTarget "Cartwheel RulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D87C3519E07071002F98A2 /* Debug */,
+				E1D87C3619E07071002F98A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1D87C0A19E07071002F98A2 /* Project object */;
+}
