@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC458592-1E3F-4BCF-8AE2-BBE6BFF55C5E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Cartwheel Ruler</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CDB1123E1F285BC9311FAE88C4F23FE504D3A36F</key>
+		<string>https://github.com/alexreidy/Cartwheel-Ruler</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Cartwheel Ruler.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CDB1123E1F285BC9311FAE88C4F23FE504D3A36F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alexreidy/Cartwheel-Ruler</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CDB1123E1F285BC9311FAE88C4F23FE504D3A36F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CDB1123E1F285BC9311FAE88C4F23FE504D3A36F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cartwheel%20Ruler</string>
+		</dict>
+	</array>
+</dict>
+</plist>

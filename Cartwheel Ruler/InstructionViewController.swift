@@ -12,25 +12,27 @@ import UIKit
 class InstructionViewController: UIViewController {
     
     var slideImages: [UIImage] = [
-        UIImage(named: "tesla.JPG")!,
-        UIImage(named: "pic.JPG")!,
-        UIImage(named: "pic.PNG")!
+        UIImage(named: "0.jpg")!,
+        UIImage(named: "1.jpg")!,
+        UIImage(named: "2.jpg")!,
+        UIImage(named: "3.jpg")!,
+        UIImage(named: "4.jpg")!,
+        UIImage(named: "5.jpg")!,
+        UIImage(named: "6.jpg")!,
     ]
     
-    var slideShow: ImageSlideShowModel!
+    var slideShow: SlideShowModel!
 
     @IBOutlet weak var instructionImageView: UIImageView!
     
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
-    
-    @IBOutlet var leftSwipeRecognizer: UISwipeGestureRecognizer!
-    
     @IBAction func onImageSwipeRight(sender: AnyObject) {
         if let slide = slideShow.getPrevSlide() {
             instructionImageView.image = slide
         }
     }
     
+    @IBOutlet var leftSwipeRecognizer: UISwipeGestureRecognizer!
     @IBAction func onImageSwipeLeft(sender: AnyObject) {
         if let slide = slideShow.getNextSlide() {
             instructionImageView.image = slide
@@ -38,12 +40,16 @@ class InstructionViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        slideShow = ImageSlideShowModel(slides: slideImages)
+        rightSwipeRecognizer.direction = UISwipeGestureRecognizerDirection.Right
+        leftSwipeRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        
+        slideShow = SlideShowModel(slides: slideImages)
+        
         if let slide = slideShow.getNextSlide() {
             instructionImageView.image = slide
         }
-        rightSwipeRecognizer.direction = UISwipeGestureRecognizerDirection.Right
-        leftSwipeRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        
+        say("Welcome to Cartwheel Ruler")
     }
     
 }

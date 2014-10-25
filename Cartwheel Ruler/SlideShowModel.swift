@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ImageSlideShowModel: NSObject {
+class SlideShowModel: NSObject {
     
     private var slides: [UIImage] = []
     

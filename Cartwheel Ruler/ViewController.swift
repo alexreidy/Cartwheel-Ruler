@@ -116,7 +116,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        say("Welcome to Cartwheel Ruler")
+        //say("Welcome to Cartwheel Ruler")
         
         distanceInUnit = [
             {ruler in return ruler.inches},
