@@ -9,26 +9,13 @@
 //
 // TODO
 //
+//
+//
 
 import UIKit
-import AudioToolbox
-import AVFoundation
-
-func say(text: String) {
-    var u = AVSpeechUtterance(string: text)
-    u.voice = AVSpeechSynthesisVoice(language: "en-US")
-    u.rate  = 0.25 * AVSpeechUtteranceMaximumSpeechRate
-    AVSpeechSynthesizer().speakUtterance(u)
-    println(text)
-}
-
-func vibrate() {
-    AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-}
 
 class ViewController: UIViewController {
-    
-    var ruler = Ruler()
+    var ruler: Ruler! = nil
     
     @IBOutlet weak var distanceLabel: UILabel!
     
@@ -116,7 +103,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //say("Welcome to Cartwheel Ruler")
+        
+        let dimensions = getDeviceHeightAndDepth()
+        
+        if dimensions.height != nil && dimensions.depth != nil {
+            ruler = Ruler(deviceHeight: dimensions.height!, deviceDepth: dimensions.depth!)
+        } else {
+            ruler = Ruler(deviceHeight: 0, deviceDepth: 0)
+        }
         
         distanceInUnit = [
             {ruler in return ruler.inches},
@@ -125,7 +119,7 @@ class ViewController: UIViewController {
             {ruler in return ruler.meters}
         ]
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

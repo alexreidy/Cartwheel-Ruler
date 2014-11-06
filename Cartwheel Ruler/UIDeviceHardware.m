@@ -1,9 +1,11 @@
 //
 //  UIDeviceHardware.m
+//  File is under MIT license - Copyright (c) 2013 fahrulazmi
 //
 //  usage :
 //      NSString *platform = [UIDeviceHardware platform];
 //
+
 
 #import "UIDeviceHardware.h"
 #include <sys/types.h>
@@ -69,10 +71,6 @@
     if ([platform isEqualToString:@"iPad4,7"])      return @"iPad Mini 3 (WiFi)";
     if ([platform isEqualToString:@"iPad4,8"])      return @"iPad Mini 3 (CDMA)";
     if ([platform isEqualToString:@"iPad4,9"])      return @"iPad Mini 3 (CDMA)";
-    
-    
-    if ([platform isEqualToString:@"i386"])         return [UIDevice currentDevice].model;
-    if ([platform isEqualToString:@"x86_64"])       return [UIDevice currentDevice].model;
     
     return platform;
 }

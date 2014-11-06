@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wY2-3C-W37">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -91,8 +93,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st8-fr-Thq">
-                                <rect key="frame" x="18" y="427" width="284" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-Kz-J6W">
+                                <constraints>
+                                    <constraint firstAttribute="height" id="deA-c2-0iU"/>
+                                    <constraint firstAttribute="width" id="v2X-jb-mPd"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YHL-1e-zuF">
+                                <rect key="frame" x="141" y="382" width="39" height="37"/>
+                            </pageControl>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Oa-rG-2O1">
+                                <rect key="frame" x="25" y="104" width="270" height="360"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Oa-rG-2O1" secondAttribute="height" multiplier="3:4" id="7ty-JG-ppz"/>
+                                    <constraint firstAttribute="width" secondItem="8Oa-rG-2O1" secondAttribute="height" multiplier="3:4" id="wZg-Rm-ZKD"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wZg-Rm-ZKD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wah-iR-slq" appends="YES" id="2i0-Sh-B67"/>
+                                    <outletCollection property="gestureRecognizers" destination="q6J-4z-y8Y" appends="YES" id="lRU-lc-Qk2"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartwheel Ruler" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In8-zM-8t7">
+                                <rect key="frame" x="80" y="28" width="161" height="30.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st8-fr-Thq">
+                                <rect key="frame" x="18" y="501" width="284" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sPj-MV-dze"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <state key="normal" title="Ok, let's measure!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,26 +138,32 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="dBr-eW-n9B"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-Kz-J6W"/>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YHL-1e-zuF">
-                                <rect key="frame" x="141" y="382" width="39" height="37"/>
-                            </pageControl>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Oa-rG-2O1">
-                                <rect key="frame" x="25" y="59" width="270" height="360"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="wah-iR-slq" appends="YES" id="2i0-Sh-B67"/>
-                                    <outletCollection property="gestureRecognizers" destination="q6J-4z-y8Y" appends="YES" id="lRU-lc-Qk2"/>
-                                </connections>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cartwheel Ruler" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In8-zM-8t7">
-                                <rect key="frame" x="80" y="28" width="161" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="In8-zM-8t7" firstAttribute="top" secondItem="3aE-xA-cAt" secondAttribute="bottom" constant="8" id="4Y5-Be-t3k"/>
+                            <constraint firstItem="uvP-l3-9oc" firstAttribute="top" secondItem="st8-fr-Thq" secondAttribute="bottom" constant="37" id="6AP-RR-uER"/>
+                            <constraint firstItem="8Oa-rG-2O1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="US2-hN-66F" secondAttribute="leadingMargin" constant="9" id="7Kw-TI-JRQ"/>
+                            <constraint firstItem="st8-fr-Thq" firstAttribute="leading" secondItem="US2-hN-66F" secondAttribute="leadingMargin" constant="2" id="8jn-FN-Wsm"/>
+                            <constraint firstItem="In8-zM-8t7" firstAttribute="top" secondItem="3aE-xA-cAt" secondAttribute="bottom" constant="8" id="B0h-5P-zoR"/>
+                            <constraint firstItem="YHL-1e-zuF" firstAttribute="centerX" secondItem="In8-zM-8t7" secondAttribute="centerX" id="J8P-rn-xP3"/>
+                            <constraint firstItem="YHL-1e-zuF" firstAttribute="centerX" secondItem="st8-fr-Thq" secondAttribute="centerX" id="Phg-la-x9r"/>
+                            <constraint firstItem="In8-zM-8t7" firstAttribute="top" secondItem="3aE-xA-cAt" secondAttribute="bottom" constant="8" symbolic="YES" id="Sar-7c-UAl"/>
+                            <constraint firstItem="st8-fr-Thq" firstAttribute="centerX" secondItem="US2-hN-66F" secondAttribute="centerX" id="T10-nG-HIC"/>
+                            <constraint firstItem="8Oa-rG-2O1" firstAttribute="centerX" secondItem="YHL-1e-zuF" secondAttribute="centerX" id="YaR-I9-rPE"/>
+                            <constraint firstItem="8Oa-rG-2O1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="In8-zM-8t7" secondAttribute="bottom" constant="45" id="ZMe-He-0vv"/>
+                            <constraint firstItem="8Oa-rG-2O1" firstAttribute="centerY" secondItem="US2-hN-66F" secondAttribute="centerY" id="cVH-6w-kDe"/>
+                            <constraint firstItem="Ogd-Kz-J6W" firstAttribute="top" secondItem="US2-hN-66F" secondAttribute="top" id="kLt-Xn-Mla"/>
+                            <constraint firstItem="st8-fr-Thq" firstAttribute="top" secondItem="YHL-1e-zuF" secondAttribute="bottom" constant="82" id="l1l-vY-sgK"/>
+                            <constraint firstItem="Ogd-Kz-J6W" firstAttribute="leading" secondItem="US2-hN-66F" secondAttribute="leading" id="mNa-H5-DMX"/>
+                            <constraint firstItem="st8-fr-Thq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Oa-rG-2O1" secondAttribute="bottom" constant="37" id="u1e-xQ-4Uh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Y5-Be-t3k"/>
+                                <exclude reference="B0h-5P-zoR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>

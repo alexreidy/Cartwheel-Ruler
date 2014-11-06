@@ -9,8 +9,6 @@
 import Foundation
 import CoreMotion
 
-func now() -> Int { return time(nil) } // Current UNIX timestamp
-
 class Ruler: NSObject {
     
     private var timesHorizontal = 0
@@ -75,6 +73,11 @@ class Ruler: NSObject {
             }
             return nil
         }
+    }
+    
+    init(deviceHeight: Double, deviceDepth: Double) {
+        self.deviceHeight = deviceHeight
+        self.deviceDepth = deviceDepth
     }
     
     func loop() {

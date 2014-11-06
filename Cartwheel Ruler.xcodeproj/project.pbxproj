@@ -17,7 +17,9 @@
 		E11180CE19FB307800FDDBE7 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E11180C719FB307800FDDBE7 /* 0.jpg */; };
 		E11180CF19FB307800FDDBE7 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E11180C819FB307800FDDBE7 /* 6.jpg */; };
 		E11180D019FB307800FDDBE7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E11180C919FB307800FDDBE7 /* 1.jpg */; };
+		E148EF451A02E0FF00635914 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148EF441A02E0FF00635914 /* Util.swift */; };
 		E16B2E4A19EA244400D8DDF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16B2E4919EA244400D8DDF2 /* AudioToolbox.framework */; };
+		E170E73D19FC583900F117EF /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = E170E73B19FC583900F117EF /* UIDeviceHardware.m */; };
 		E1D87C1819E07071002F98A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87C1719E07071002F98A2 /* AppDelegate.swift */; };
 		E1D87C1A19E07071002F98A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87C1919E07071002F98A2 /* ViewController.swift */; };
 		E1D87C1D19E07071002F98A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D87C1B19E07071002F98A2 /* Main.storyboard */; };
@@ -47,7 +49,11 @@
 		E11180C719FB307800FDDBE7 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		E11180C819FB307800FDDBE7 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		E11180C919FB307800FDDBE7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		E148EF441A02E0FF00635914 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E16B2E4919EA244400D8DDF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E170E73A19FC583900F117EF /* Cartwheel Ruler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cartwheel Ruler-Bridging-Header.h"; sourceTree = "<group>"; };
+		E170E73B19FC583900F117EF /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
+		E170E73C19FC583900F117EF /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
 		E1D87C1219E07071002F98A2 /* Cartwheel Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cartwheel Ruler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D87C1619E07071002F98A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D87C1719E07071002F98A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,13 +124,17 @@
 				E1D87C1719E07071002F98A2 /* AppDelegate.swift */,
 				E11180C019FAE0EE00FDDBE7 /* SlideShowModel.swift */,
 				E11180BA19FABF4E00FDDBE7 /* InstructionViewController.swift */,
-				E11180C219FAE12C00FDDBE7 /* Instruction Slides */,
 				E1D87C1919E07071002F98A2 /* ViewController.swift */,
 				E103EFAA19E98E7E005E0EBE /* Ruler.swift */,
+				E148EF441A02E0FF00635914 /* Util.swift */,
+				E170E73B19FC583900F117EF /* UIDeviceHardware.m */,
+				E170E73C19FC583900F117EF /* UIDeviceHardware.h */,
 				E1D87C1B19E07071002F98A2 /* Main.storyboard */,
+				E11180C219FAE12C00FDDBE7 /* Instruction Slides */,
 				E1D87C1E19E07071002F98A2 /* Images.xcassets */,
 				E1D87C2019E07071002F98A2 /* LaunchScreen.xib */,
 				E1D87C1519E07071002F98A2 /* Supporting Files */,
+				E170E73A19FC583900F117EF /* Cartwheel Ruler-Bridging-Header.h */,
 			);
 			path = "Cartwheel Ruler";
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 				E1D87C1A19E07071002F98A2 /* ViewController.swift in Sources */,
 				E1D87C1819E07071002F98A2 /* AppDelegate.swift in Sources */,
 				E103EFAB19E98E7E005E0EBE /* Ruler.swift in Sources */,
+				E170E73D19FC583900F117EF /* UIDeviceHardware.m in Sources */,
+				E148EF451A02E0FF00635914 /* Util.swift in Sources */,
 				E11180C119FAE0EE00FDDBE7 /* SlideShowModel.swift in Sources */,
 				E11180BB19FABF4E00FDDBE7 /* InstructionViewController.swift in Sources */,
 			);
@@ -395,9 +407,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cartwheel Ruler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cartwheel Ruler/Cartwheel Ruler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -405,9 +420,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cartwheel Ruler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cartwheel Ruler/Cartwheel Ruler-Bridging-Header.h";
 			};
 			name = Release;
 		};
